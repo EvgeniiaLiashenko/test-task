@@ -1,0 +1,166 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+ul,
+ol {
+    padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #333333;
+    font-size: 18px;
+    line-height: 160%;
+    font-weight: 400;
+    background-color: #ffffff;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.section {
+    padding: 140px 0;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 48px;
+    margin-bottom: 60px;
+    line-height: 130%;
+    display: inline-block;
+    position: relative;
+}
+
+.title::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 15px;
+    bottom: 8px;
+    left: 0;
+    background-color: rgba(35, 82, 222, 0.1);
+}
+
+.registration__title,
+.regisrtation__form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.registration__form-inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+}
+
+.form__label {
+    display: block;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 130%;
+    color: #333;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.form__input {
+    padding: 13px 70px 13px 15px;
+    background-color: #E5E5E5;
+    border: none;
+}
+
+.form__date {
+    padding: 13px 100px 13px 15px;
+}
+
+.form__btn {
+    background-color: #2352DE;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 130%;
+}
+
+.registration__bottom-text {
+    max-width: 530px;
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+}
+
+.registration__bottom-list {
+    display: flex;
+}
+
+.registration__bottom-items:not(:last-child) {
+    margin-right: 20px;
+}
+
+@media (max-width:768px) {
+    .registration__form-inner {
+        display: block;
+    }
+    .form__item {
+        margin-bottom: 20px;
+    }
+    .form__sibmit {
+        display: flex;
+        justify-content: center;
+    }
+    .form__btn {
+        padding: 12px 100px;
+    }
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <section class="registration">
+        <div class="container">
+            <div class="registration__title">
+                <h2 class="title">Registration</h2>
+            </div>
+            <form class="regisrtation__form">
+                <div class="registration__form-inner">
+                    <div class="form__item">
+                        <label class="form__label" for="name">Name</label>
+                        <input class="form__input" name="name" placeholder="John" type="text" id="name" required>
+                    </div>
+                    <div class="form__item">
+                        <label class="form__label" for="surname">Last name</label>
+                        <input class="form__input" name="surname" placeholder="Smith" type="text" id="surname" required>
+                    </div>
+                    <div class="form__item">
+                        <label class="form__label" for="date ">Date of birth</label>
+                        <input class="form__input form__date" name="date" type="date" id="date" required>
+                    </div>
+                    <div class="form__item">
+                        <label class="form__label" for="email">Email</label>
+                        <input class="form__input" name="email" placeholder="John.smith@mail.com" type="email" id="email" required>
+                    </div>
+                    <div class="form__item">
+                        <label class="form__label" for="password">Create your password</label>
+                        <input class="form__input" name="password" type="password" id="password" required>
+                    </div>
+                    <div class="form__sibmit">
+                        <button class="form__btn" type="submit">Send</button>
+                    </div>
+                </div>
+            </form>
+            <div class="registration__bottom">
+                <p class="registration__bottom-text">
+                    Please, fill the registration form and go to personal account. Get in touch with us in our social meda:
+                </p>
+                <ul class="registration__bottom-list">
+                    <li class="registration__bottom-items">
+                        <a class="registration__mottom-link" href="#">
+                            <img class="registration__bottom-img" src="images/instagram.svg" alt="instagramm icon">
+                        </a>
+                    </li>
+                    <li class="registration__bottom-items">
+                        <a class="registration__mottom-link" href="#">
+                            <img class="registration__bottom-img" src="images/facebook.svg" alt="facebook icon">
+                        </a>
+                    </li>
+                    <li class="registration__bottom-items">
+                        <a class="registration__mottom-link" href="#">
+                            <img class="registration__bottom-img" src="images/telegram.svg" alt="telegram icon">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
